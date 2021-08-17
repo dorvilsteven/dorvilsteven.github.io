@@ -3,41 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <title>Steven Dorvil</title>
-
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://kit.fontawesome.com/cd527d8368.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
 
   <body>
-    <header> 
-      <h1>Student Bio</h1>
+
+    <header>
+      <nav>
+        <div class="nav-left">
+          <img src="https://via.placeholder.com/75x25" alt="logo">
+        </div>
+        <div class="nav-right">
+          <button class="menu-bars">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="#bio">About Me</a></li>
+            <li><a href="#works">Porfolio</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="title">
+          <h1 class="header-title">Steven Dorvil</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="header-image">
+          <img src="./assets/img/profile-small.jpg" alt="heaeder profile image">
+        </div>
+      </section>
     </header>
-
-    <div class="container">
-      <section id="main-bio">
-        <!-- TODO: Replace content with your own info -->
-        <h2>Steven Dorvil</h2>
-
-        <img
-          id="bio-image"
-          src="./img/profile-small.jpg"
-          alt="Steven Dorvil"
-          style="width: 200px;"
-        />
-
-        <p>
-          Write a short paragraph or two about yourself, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo tenetur consequuntur ducimus quam odio voluptate or use placeholder text
-          from <a href="http://www.lipsum.com/">www.lipsum.com</a>
-        </p>
+    
+    <main>
+      <section id="bio">
+    
       </section>
-
-      <section id="contact-info">
-        <h2>Contact Info</h2>
-        <ul>
-          <li><strong>Email:</strong> <a href="#">dorvilsteven@gmail.com</a></li>
-          <li><strong>Github:</strong> <a href="#">github.com/dorvilsteven</a></li>
-          <li><strong>LinkedIn:</strong> <a href="#">coming soon...</a></li>
-        </ul>
+      <section id="works">
+    
       </section>
-    </div>
+      <section id="connect">
+    
+      </section>
+    </main>
+    
+    <footer>
+      <div class="copyright"></div>
+    </footer>
+
   </body>
 </html>
