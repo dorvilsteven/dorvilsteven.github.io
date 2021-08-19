@@ -18,7 +18,9 @@ body {
 a {
   text-decoration: none;
 }
-
+i {
+  width: 100%;
+}
 /* 
 *
 *
@@ -190,6 +192,48 @@ main {
 }
 /* 
 *
+*
+connect section containing
+connect title and social links
+*
+* 
+*/
+#connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  background: rgba(104, 120, 100, 1);
+}
+#connect .connect-title {
+  font-size: 2em;
+  color: white;
+  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.13em transparent;
+  letter-spacing: 0.1em;
+  width: 100%;
+}
+#connect .connect-icons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+#connect .connect-icons a {
+  font-size: 6em;
+  flex: 1 50%;
+  color: black;
+  display: flex;
+  padding: 0.3em 0;
+}
+#connect .connect-icons a:hover {
+  color: var(--color-white-blue);
+}
+/* 
+*
 Footer section
 *
 */
@@ -270,6 +314,16 @@ changes made to few sections
     padding: 0.8em 3.4em;
   }
   /* END bio */
+  /* connect */
+  #connect {
+    height: 20%;
+  }
+  #connect .connect-icons {
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+  }
+  /* END connect */
 }
 /* 
 *
