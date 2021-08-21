@@ -1,15 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /* root and global styling  */
 :root {
+  /* main colors for site */
   --color-green: #687864;
   --color-blue: #3680b9;
   --color-dark-blue: #5085a5;
   --color-light-blue: #8fc1e3;
   --color-white-blue: #eaf1f9;
+  /* sub colors */
+  --color-black: #111;
+  --color-white: #fff;
+  /* gradient colors */
+  --colorful-background: linear-gradient(
+    -45deg,
+    #eeaa52,
+    #e73c6f,
+    #fcd628,
+    #f33e7d
+  );
+  --simple-background: linear-gradient(
+    var(--color-blue),
+    var(--color-white-blue)
+  );
+  --simple-background-reversed: linear-gradient(
+    var(--color-white-blue),
+    var(--color-blue)
+  );
+  --simple-background-mid: linear-gradient(
+    var(--color-white-blue),
+    var(--color-light-blue)
+  );
 }
 * {
   box-sizing: border-box;
-  border: 1px solid #111;
+  /* border: 1px solid var(--color-black); */
 }
 body {
   margin: 0;
@@ -35,6 +59,7 @@ contains header for both mobile and desktop
 */
 header {
   background-color: var(--color-blue);
+  border-bottom: 0.25em solid var(--color-dark-blue);
 }
 /*
 *
@@ -46,6 +71,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0.5em;
+  border-bottom: 2px solid var(--color-dark-blue);
 }
 .nav-left {
   width: 25%;
@@ -87,7 +113,7 @@ nav {
   margin: auto;
 }
 #nav-menu li a {
-  color: #fff;
+  color: var(--color-white);
   font-size: 3rem;
 }
 .exit-button {
@@ -133,7 +159,7 @@ nav {
 .header-hero-title {
   font-size: 2.1em;
   color: #eee;
-  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+  background: var(--colorful-background);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-stroke: 0.13em transparent;
@@ -180,12 +206,12 @@ connect contains a list of social links
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: linear-gradient(var(--color-blue), var(--color-white-blue));
+  background: var(--simple-background);
   padding: 2em 0;
 }
 #bio h2 {
   font-size: 2.4em;
-  border-bottom: 3px solid #111;
+  border-bottom: 3px solid var(--color-black);
   border-radius: 12%;
 }
 #bio p {
@@ -204,14 +230,14 @@ all the side works
 *
 */
 #portfolio {
-  background: linear-gradient(var(--color-white-blue), var(--color-blue));
+  background: var(--simple-background-reversed);
 }
 .portfolio-title {
   text-align: center;
   font-size: 2em;
-  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+  background: var(--colorful-background);
   background-size: 200% 200%;
-  border: 1px solid #111;
+  border: 1px solid var(--color-black);
 }
 .portfolio-works {
   display: flex;
@@ -221,7 +247,7 @@ all the side works
 .active-work {
   height: 40%;
   width: 90%;
-  background: linear-gradient(var(--color-white-blue), var(--color-light-blue));
+  background: var(--simple-background-mid);
   margin: 1em;
   display: flex;
   flex-direction: column-reverse;
@@ -235,7 +261,7 @@ all the side works
   width: 100%;
 }
 .active-work-text {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   width: 100%;
 }
@@ -243,8 +269,8 @@ all the side works
   display: none;
 }
 .run-buddy {
-  color: #fff;
-  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+  color: var(--color-white);
+  background: var(--colorful-background);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-stroke: 0.13em transparent;
@@ -255,7 +281,7 @@ all the side works
   align-items: center;
   width: 100%;
   margin: 2em;
-  border-top: solid 2px #111;
+  border-top: solid 2px var(--color-black);
   width: 90%;
 }
 .work {
@@ -284,7 +310,7 @@ connect title and social links
 #connect .connect-title {
   font-size: 2em;
   color: white;
-  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+  background: var(--colorful-background);
   background-size: 200% 200%;
   letter-spacing: 0.1em;
   width: 100%;
@@ -323,7 +349,7 @@ footer .copyright {
   width: 100%;
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: var(--color-white);
   font-size: 1.35em;
 }
 
@@ -396,6 +422,7 @@ changes made to few sections
   .active-work {
     border: none;
     padding: 4em;
+    background: var(--simple-background-reversed);
   }
   .active-work .active-work-text {
     display: flex;
@@ -418,7 +445,7 @@ changes made to few sections
   #connect {
     height: 20%;
     flex-direction: row;
-    background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+    background: var(--colorful-background);
   }
   #connect .connect-title {
     background: none;
@@ -429,7 +456,7 @@ changes made to few sections
     margin: auto;
   }
   #connect a i {
-    color: #fff;
+    color: var(--color-white);
     font-size: 0.5em;
   }
   /* END connect */
