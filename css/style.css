@@ -8,12 +8,13 @@
 }
 * {
   box-sizing: border-box;
-  /* border: 1px solid #111; */
+  border: 1px solid #111;
 }
 body {
   margin: 0;
   padding: 0;
   max-width: 1920px;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -132,7 +133,7 @@ nav {
   color: #eee;
   background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
   background-size: 200% 200%;
-  --webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-stroke: 0.13em transparent;
   animation: gradient 5s ease infinite;
   letter-spacing: 0.11em;
@@ -155,8 +156,8 @@ nav {
 }
 .hero .header-image img {
   border-radius: 50%;
-  height: 275px;
-  width: 275px;
+  height: 350px;
+  width: 350px;
 }
 
 /* 
@@ -249,8 +250,6 @@ connect title and social links
   color: white;
   background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
   background-size: 200% 200%;
-  --webkit-background-clip: text;
-  -webkit-text-stroke: 0.13em transparent;
   letter-spacing: 0.1em;
   width: 100%;
 }
@@ -265,6 +264,7 @@ connect title and social links
   flex: 1 50%;
   color: black;
   display: flex;
+  flex-direction: column;
   padding: 0.3em 0;
 }
 #connect .connect-icons a:hover {
@@ -334,12 +334,15 @@ changes made to few sections
   .hero .title p {
     width: 100%;
   }
+  .header-hero-title {
+    font-size: 1.8em;
+  }
   .hero .header-image {
     margin-top: 5%;
   }
   .hero .header-image img {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
   }
   /* END nav header  */
   /* bio  */
@@ -362,12 +365,22 @@ changes made to few sections
   /* connect */
   #connect {
     height: 20%;
+    flex-direction: row;
+    background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+  }
+  #connect .connect-title {
+    background: none;
   }
   #connect .connect-icons {
     flex-wrap: nowrap;
     width: 100%;
     margin: auto;
   }
+  #connect a i {
+    color: #fff;
+    font-size: 0.5em;
+  }
+
   /* END connect */
 }
 /* 
@@ -378,5 +391,8 @@ changes made to few sections
 *
 *
 */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 980px) {
+  .header-hero-title {
+    font-size: 2.8em;
+  }
 }
