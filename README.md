@@ -5,7 +5,7 @@
 ## Design
 
 The design of my site was meant to be super basic, it first started with the colors
-which is choose from an online source that generates beautiful color palettes.
+which i choose from an online source that generates beautiful color palettes.
 
 ![color palette](./assets/md-img/colors.png)
 
