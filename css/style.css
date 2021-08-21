@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /* root and global styling  */
 :root {
   --color-green: #687864;
@@ -15,6 +16,7 @@ body {
   padding: 0;
   max-width: 1920px;
   font-size: 16px;
+  font-family: "Bebas Neue", cursive;
 }
 a {
   text-decoration: none;
@@ -191,27 +193,61 @@ connect contains a list of social links
   padding: 0.4em 5em;
 }
 /* END bio  */
-/* works */
+/* 
+*
+*
+works section will contain title and works
+inside the works section will contain two section
+active works and side works which will contain
+all the side works  
+*
+*
+*/
 #portfolio {
-  height: auto;
   background: linear-gradient(var(--color-white-blue), var(--color-blue));
 }
 .portfolio-title {
   text-align: center;
   font-size: 2em;
-  margin-top: 1em;
+  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+  background-size: 200% 200%;
+  border: 1px solid #111;
 }
 .portfolio-works {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .active-work {
-  height: 250px;
-  width: 250px;
-  background: blue;
+  height: 40%;
+  width: 90%;
+  background: linear-gradient(var(--color-white-blue), var(--color-light-blue));
   margin: 1em;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.active-work-image {
+  width: 90%;
+  margin: 1.5em;
+}
+.active-work-image a img {
+  width: 100%;
+}
+.active-work-text {
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+}
+.active-work-text h4 {
+  display: none;
+}
+.run-buddy {
+  color: #fff;
+  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #fcd628, #f33e7d);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.13em transparent;
 }
 .side-works {
   display: flex;
@@ -224,8 +260,8 @@ connect contains a list of social links
 }
 .work {
   height: 150px;
-  width: 150px;
-  background: red;
+  width: 70%;
+  background: url("https://via.placeholder.com/250x150");
   margin: 0.5em;
 }
 /* END works */
@@ -357,9 +393,25 @@ changes made to few sections
   }
   /* END bio */
   /* work */
+  .active-work {
+    border: none;
+    padding: 4em;
+  }
+  .active-work .active-work-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .active-work-text h4 {
+    display: block;
+  }
+  .run-buddy {
+    flex-grow: 0.5;
+  }
   .side-works {
     flex-direction: row;
     justify-content: center;
+    border-top: none;
   }
   /* END work */
   /* connect */
@@ -380,7 +432,6 @@ changes made to few sections
     color: #fff;
     font-size: 0.5em;
   }
-
   /* END connect */
 }
 /* 
