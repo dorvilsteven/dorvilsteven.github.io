@@ -275,7 +275,7 @@ all the side works
 .active-work-text h4 {
   display: none;
 }
-.run-buddy {
+.work-title {
   color: var(--color-white);
   background: var(--colorful-background);
   background-size: 200% 200%;
@@ -296,6 +296,22 @@ all the side works
   width: 70%;
   background: url("https://via.placeholder.com/250x150");
   margin: 0.5em;
+}
+.run-buddy {
+  background-image: url("../img/runbuddy.png");
+  background-size: cover;
+}
+.weather-app {
+  background-image: url("../img/weatherapp.png");
+  background-size: cover;
+}
+.workday {
+  background-image: url("../img/workdayscheduler.png");
+  background-size: cover;
+}
+.quiz {
+  background-image: url("../img/quiz.png");
+  background-size: cover;
 }
 /* END works */
 /* 
