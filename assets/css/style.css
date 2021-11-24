@@ -297,6 +297,10 @@ all the side works
   background: url("https://via.placeholder.com/250x150");
   margin: 0.5em;
 }
+.smagums {
+  background-image: url("../img/smagums.png");
+  background-size: cover;
+}
 .run-buddy {
   background-image: url("../img/runbuddy.png");
   background-size: cover;
