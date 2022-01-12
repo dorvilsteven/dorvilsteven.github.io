@@ -317,6 +317,10 @@ all the side works
   background-image: url("../img/quiz.png");
   background-size: cover;
 }
+.tech-blog {
+  background-image: url("../img/tech-blog.png");
+  background-size: cover;
+}
 /* END works */
 /* 
 *
