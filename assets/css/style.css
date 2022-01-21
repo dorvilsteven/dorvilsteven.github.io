@@ -298,6 +298,10 @@ all the side works
   margin: 0.5em;
 }
 .smagums {
+  background-image: url("../img/shmovies.png");
+  background-size: cover;
+}
+.smagums {
   background-image: url("../img/smagums.png");
   background-size: cover;
 }
